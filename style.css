@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0px;
+}
+body{
+    max-width: 80vw;
+    margin: 0px auto;
+}
+#preloader{
+    background: #FEFEFE url("preloader.gif") no-repeat 50% 50%;
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: 10%;
+}
+
+nav{
+    height: 10vh;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo>img{
+    height: 87%;
+}
+.searchBar{
+    width: 65%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+.searchBar>*{
+    font-size: 1.2vw;
+    height: inherit;
+}
+#search{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 3vw;
+}
+#search:focus{
+    border-width: 2px 0px 2px 2px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-style: solid;
+    border-color: rgb(126,217,87);
+}
+
+.searchBtn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    border: none;
+    border-left: 2px solid black;
+    background-color:black;
+    color: white;
+    width: 10%;
+}
+.searchBtn:active{
+    background-color: rgb(116, 113, 113);
+}
+#searchHamburger{
+    background-color: transparent;
+    display: none;
+    border: none;
+    font-size: 1.7em;
+}
+.user{
+    width: 10%;
+    height: 70%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.userImg{
+    height: 100%;
+}
+.slider{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 70%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.slider>img{
+    width: 100%;
+    height: inherit;
+}
+h2{
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1.5vw 0px;
+}
+.rowDiv{
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+}
+.card{
+    border-radius: 7px;
+    height: 30vh;
+    justify-content: space-between;
+    width: 17%;
+    cursor: pointer;
+}
+.foodCategory .rowDiv{
+    /* background-color: rgba(233, 232, 250,0.5); */
+    padding: 0px 3px;
+}
+.foodCategory .card:hover{
+    opacity: 0.7;
+}
+.foodCategory img{
+    height: 85%;
+    border-radius: 50%;
+}
+.card p{
+    font-weight: 700;
+    font-size: 1.4vw;
+    color: rgb(53, 51, 51);
+    text-align: center;
+}
+.nearYou .rowDiv{
+    gap: 1.5vw;
+}
+.nearYou .card{
+    border-radius: 10px;
+    height: 35vh;
+    width: 30%;
+}
+.nearYou .card:hover{
+    box-shadow: 1px 1px 20px 0.2px black;
+}
+.nearYou img{
+    border-radius: 10px;
+    height: 85%;
+}
+.topBrands .card{
+    width: 25%;
+    height: 22vh;
+    border-radius: 50%;
+    /* border:0.5px solid black; */
+}
+.topBrands img{
+    border-radius: 50%;
+    width: 100%;
+    height: 90%;
+}
+.topBrands .card:hover{
+    opacity: 0.6;
+}
+footer{
+    background-color: rgb(236, 238, 234);
+    width: 100vw;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0px;
+    padding: 2vh 10vw;
+}
+footer>h2{
+    font-family: 'Shrikhand',cursive;
+    font-size: 2.5vw;
+}
+.footerUpper{
+    justify-content: space-between;
+}
+.footerList{
+    list-style: none;
+    padding: 0px;
+    row-gap: 2vh;
+}
+.footerList>li{
+    color: rgb(82, 82, 80);
+}
+.footerList>li:hover{
+    cursor: pointer;
+    color: black;
+}
+.socialList{
+    justify-content: space-between;
+    gap: 5px;
+    list-style: none;
+    padding: 0px;
+    color: black;
+    font-size: 1.4vw;
+}
+footer>p{
+    margin: 15px auto;
+}
+.toTop{
+    position: fixed;
+    right: 3vw;
+    background-color: rgb(126,217,87);
+    top:85vh;
+    height:40px;
+    width: 40px;
+    text-decoration: none;
+    color: #FEFEFE;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.4s;
+}
+html{
+    scroll-behavior: smooth; /*It is done so that scroll using toTop takes place smoothly*/
+}
+
+@media screen and (max-width:930px) {
+    .searchBar>*{
+        font-size: 1.4vw;
+    }
+    .card{
+        height: 20vh;
+    }
+    .socialList{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:820px) {
+    .card p{
+        font-size: 1.6vw;
+    }
+    .nearYou .card{
+        height: 32vh;
+    }
+}
+
+@media screen and (max-width:770px){
+    .slider{
+        width: 100%;
+    }
+    .searchBar{
+        display: none;
+    }
+    #searchHamburger{
+        display: block;
+    }
+    .user{
+        justify-content: space-between;
+        gap: 25px;
+    }
+    h2{
+        font-size: 2.3vw;
+    }
+    .socialList{
+        font-size: 2.3vw;
+    }
+    .rowDiv{
+        flex-wrap: wrap;
+    }
+    .searchBar{
+        width: 90%;
+    }
+    .searchBar>*{
+        font-size: 2.4vw;
+    }
+}
+@media screen and (max-width:680px){
+    .card p {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .socialList{
+        font-size: 18px;
+    }
+    .card{
+        height: 110px;
+        width: 90px;
+    }
+    .topBrands .card{
+        height: 110px;
+        width: 90px;
+    }
+    .nearYou .card{
+        height: 140px;
+        width: 160px;
+    }
+    .user{
+        height: 60%;
+    }
+    #searchHamburger{
+        font-size: 1.3em;
+    }
+    .logo{
+        height: 80%;
+    }
+    footer{
+        box-sizing: content-box;
+        position: unset;
+        width: inherit;
+    }
+}
+@media screen and (max-width:600px){
+    footer>h2{
+        font-size: 18px;
+    }
+    body{
+        max-width: 100vw;
+        padding: 3vw;
+    }
+    .user{
+        gap: 15px;
+    }
+}
+@media screen and (max-width:550px) {
+    footer{
+        align-items: center;
+    }
+    .footerUpper{
+        flex-direction: column;
+    }
+    footer>*{
+        margin: 1vh 0px;
+    }
+    .footerUpper>*{
+        margin: 2vh 0px;
+    }
+    h4{
+        font-size: 2.6vh;
+    }
+    footer>h2{
+        font-size: 3.4vh;
+    }
+    footer{
+        align-items: flex-start;
+    }
+    .card p {
+        font-size: 1.6vh;
+    }
+    h2{
+        font-size: 3vh;
+        margin-bottom: 3vh;
+    }
+    .socialList{
+        font-size: 2.6vh;
+    }
+    .user{
+        gap: 0px;
+        width: 20%;
+    }
+    .foodCategory>.rowDiv,.topBrands>.rowDiv{
+        min-height:140px;
+        overflow-x: auto;
+        column-gap: 6vw;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .foodCategory>.rowDiv::-webkit-scrollbar,.topBrands>.rowDiv::-webkit-scrollbar{
+        width: 0;
+    }
+    .foodCategory>.rowDiv img,.topBrands>.rowDiv img{
+        min-height: 90px;
+        min-width: 90px;
+    }
+    nav{
+        padding: 0px 0px;
+        height: 8vh;
+    }
+    .nearYou .rowDiv{
+        row-gap: 5vh;
+    }
+    .rowDiv{
+        margin-bottom: 5vh;
+    }
+    .searchBar>*{
+        font-size: 3.4vw;
+    }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goro - Get the Best Food Near You</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- preloader - it would appear till the time website isnt fully loaded -->
+    <div id="preloader">
+    </div>
+    <!-- Nav- it consists of Brand Logo a search bar and a hyperlink to user section -->
+    <nav class="flex itemsCenter mx">
+        <div class="logo flex itemsCenter heightInherit">
+            <img src="logo.png" alt="">
+        </div>
+
+        <div class="searchBar flex itemsCenter">
+            <input type="search" id="search" placeholder="Search for restaurants/cuisine or a dish">
+            <button class="searchBtn btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="user flex itemsCenter">
+            <!-- This is hamburger which is created when site is viewed on small screen -->
+            <button id="searchHamburger" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <img src="images/user.png" alt="" class="userImg">
+
+        </div>
+    </nav>
+    <hr>
+
+    <main class="flex flexColumn">
+        <!-- A Slider has to come here  which will show latest offers etc.-->
+        <div class="slider flex itemsCenter justifyCenter mx">
+            <img src="images/SLIDER/1.png" alt="">
+        </div>
+
+        <div class="foodCategory flex flexColumn">
+            <h2>Food By Category</h2>
+            <div class="rowDiv flex itemsCenter">
+                <div class="card flex flexColumn">
+                    <img src="images/chinese.jpg" alt="">
+                    <p>Chinese</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/italian.jpg" alt="">
+                    <p>Italian</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/southIndian.jpg" alt="">
+                    <p>S. Indian</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/northIndian.jpg" alt="">
+                    <p>N. Indian</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/mexican.jpg" alt="">
+                    <p>Mexican</p>
+                </div>
+            </div>
+        </div>
+        <!-- Food By category finished -->
+
+        <div class="nearYou flex flexColumn">
+            <h2>Near You</h2>
+            <!-- Column for famous food outlets/restaurants nearby -->
+            <div class="rowDiv flex itemsCenter">
+                <div class="card flex flexColumn">
+                    <img src="images/nishuraj.jpg" alt="">
+                    <p>Nishuraj Resort</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/Maharaja.jpg" alt="">
+                    <p>Maharaja Hotel</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/RC.jpg" alt="">
+                    <p>RC - Group of Resorts</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/BrewTown.jpg" alt="">
+                    <p>BrewTown</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/ceara.jpg" alt="">
+                    <p>Ceara Resort</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/dvine.webp" alt="">
+                    <p>Dv'ine</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/d2m.avif" alt="">
+                    <p>D2M Restaurant</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/csb.jpg" alt="">
+                    <p>Chai Sutta Bar</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/dilli6.jpeg" alt="">
+                    <p>Dilli 6 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topBrands">
+            <!-- A row showing options of top brands -->
+            <h2>Top Brands For You</h2>
+            <div class="rowDiv flex itemsCenter">
+                <div class="card flex flexColumn">
+                    <img src="images/BRAND/KFC.jpg" alt="">
+                    <p>KFC</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/BRAND/Dominos.jpg" alt="">
+                    <p>Dominos</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/BRAND/subway.png" alt="">
+                    <p>Subway</p>
+                </div>
+
+                <div class="card flex flexColumn">
+                    <img src="images/BRAND/pizzaHut.png" alt="">
+                    <p>Pizza Hut</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="flex flexColumn">
+        <h2>Goro</h2>
+        <!-- Footer is divided into 3 parts heading, upper nd then where copyright reservation is mentioned -->
+        <div class="footerUpper flex">
+            <ul class="footerList flex flexColumn">
+                <h4>About Goro</h4>
+                <li>Who are we</li>
+                <li>Blog</li>
+                <li>Work with Us</li>
+                <li>Report Fraud</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <ul class="footerList flex flexColumn">
+            <h4>FOR RESTAURANTS</h4>
+            <li>Partner With US</li>
+            <li>Apps For You</li>
+            <li>Goro For Enterprise</li>
+            </ul>
+
+            <ul class="footerList flex flexColumn">
+                <h4>Learn More</h4>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+            </ul>
+
+            <ul class="footerList flex flexColumn">
+                <h4>Social Links</h4>
+                <li>
+                <ul class="socialList flex itemsCenter">
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-google-plus"></i></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <p class="flex">All Rights Reserved By Goro | 2023.</p>
+    </footer>
+
+    <!-- This is the button which appears when one scrolls lil bit. upon clciking it, one reaches to the top of page -->
+    <a href="#" class="toTop flex justifyCenter itemsCenter"><i class="fa-solid fa-chevron-up"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>
