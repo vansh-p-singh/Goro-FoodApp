@@ -81,7 +81,7 @@ nav{
 .slider{
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 70%;
+    width: 100%;
     border: 2px solid black;
     overflow: hidden;
 }
